@@ -59,7 +59,7 @@ namespace FadeBot
         {
             string[] auths = File.ReadAllLines("userpass.txt");
             if (auths.Length == 0) Logger.LogWarning("No Userpass found -> Skip");
-            else Logger.Log("Found Userpass, assembling....");
+            else Logger.Log("Found Userpass, assembling.....");
             foreach (string line in auths)
             {
                 string Cookie = HttpUtils.GetCookie(line);
